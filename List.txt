@@ -1,0 +1,35 @@
+Person COMPLETED
+    Patient (extends person) COMPLETED
+
+    Staff (extends person) COMPLETED
+        SpecialtyStaff (extends staff) COMPLETED
+            RadiologyStaff (extends specialtystaff) COMPLETED
+                Radiologist COMPLETED
+                RadiolgyTech COMPLETED
+            
+            PharmacyStaff (extends specialtystaff) COMPLETED
+                Pharmacist COMPLETED
+                PharmacyTech COMPLETED
+
+            LabTech (no descendents) COMPLETED
+
+        General Staff (extends staff)
+            Nurse (extends general staff)
+            Doctor (extends general staff)
+    Receptionist (extends Staff)  COMPLETED
+
+Schedule COMPLETED?
+Appointment COMPLETED
+AppointmentStatus (enum) COMPLETED
+
+
+Order COMPLETED
+    Order Status (enum) COMPLETED
+    Test (extends Order) COMPLETED
+    Prescription (extends Order) COMPLETED
+
+
+
+PrescriptionInventory (extends NOTHING) COMPLETED
+
+
